@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <title>Ouahib Salma</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "U4iymIQz3LOBDX6KP",
+        });
+      })();
+    </script>
+    <script src="./script_mail.js"></script>
+  </head>
+
+  <body>
+    <div class="app">
+      <nav class="sidebar">
+        <img src="./images/logo.png" alt="Logo" width="70px" height="70px" />
+        <ul>
+          <li style="--t: 10%">
+            <i class="fa-solid fa-house-chimney"></i>
+            <span>
+              <a id="Acceuil" href="#Acceuil_menu"> Acceuil </a>
+            </span>
+          </li>
+          <li style="--t: 20%">
+            <i class="fa-solid fa-circle-info"></i>
+            <span> <a id="details_moi" href="#details_menu">Détails </a> </span>
+          </li>
+          <li style="--t: 30%">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>
+              <a id="parcours" href="#parcours_menu">Parcours </a>
+            </span>
+          </li>
+          <li style="--t: 40%">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span> <a id="projets" href="#projets_menu">Projets</a> </span>
+          </li>
+          <li style="--t: 50%">
+            <i class="fa-solid fa-keyboard"></i>
+            <span> <a id="competences" href="#skills"> Compétences </a> </span>
+          </li>
+          <li style="--t: 60%">
+            <i class="fa-solid fa-code"></i>
+            <span>
+              <a id="experience" href="#experience_menu"> Expérience </a>
+            </span>
+          </li>
+          <li style="--t: 70%">
+            <i class="fa-solid fa-network-wired"></i>
+            <span>
+              <a id="activite" href="#activite_menu"> Autre activités</a>
+            </span>
+          </li>
+          <li style="--t: 80%">
+            <i class="fa-solid fa-comment"></i>
+            <span> <a id="contact" href="#contact_menu"> Contact </a> </span>
+          </li>
+          <li style="--t: 90%" id="france">
+            <span>
+              <a id="fr" href="#" class="hidebtn"
+                ><i class="fas fa-language"></i> Français</a
+              >
+            </span>
+          </li>
+          <li style="--t: 90%" id="english">
+            <span>
+              <a id="en" href="#"><i class="fas fa-language"></i> Anglais </a>
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-content">
+        <main class="container">
+          <!-- Acceuil -->
+          <section id="Acceuil_menu" class="Acceuil main-heading">
+            <h2 id="titre1" style="margin-bottom: 1cm">
+              <span id="titre1"> Je me présente : </span>
+            </h2>
+            <div class="first-container">
+              <img
+                src="./images/OuahibSalma_rond.jpg"
+                alt="Ouahib Salma_Photo de profil"
+                width="200px"
+                height="200px"
+                class="myImg"
+              />
+              <p id="presente1">
+                Bonjour ! Je m'appelle Ouahib Salma, étudiante en deuxième année
+                d'ingénierie à l'École Nationale Supérieure d'Informatique et
+                d'Analyse des Systèmes (ENSIAS), filière Business Intelligence
+                and Data Analytics. J'ai obtenu une licence en Sciences
+                Mathématiques et Informatique (SMI) à la Faculté des Sciences
+                Semlalia Marrakech (FSSM).
+              </p>
+
+              <p id="presente2">
+                Passionnée par l'ingénierie, la Data Analytics, la Business
+                Intelligence, le Data Engineering et l'Analytics, ma mission est
+                de transformer les données brutes en chefs-d'œuvre stratégiques
+                permettant de prendre des décisions informées et de créer une
+                valeur ajoutée au sein d'une entreprise. Avec un éventail riche
+                de compétences en Power BI, Tableau, Python, Data Warehousing,
+                Intelligence Artificielle (ML & DL), et gestion de projet, je
+                suis dévouée à l'art du storytelling de données. Je suis ravie
+                de mettre mes compétences et mes connaissances au service de
+                défis réels et de contribuer à des projets révolutionnaires qui
+                dévoilent le véritable potentiel des données.
+              </p>
+
+              <div>
+                <p id="presente3">
+                  Explorez tout information sur moi en défilant
+                </p>
+                <div>
+                  <a href=""><i class="fa-brands fa-github"></i></a>
+                  <button type="button" class="btn btn-outline-light">
+                    <a
+                      id="cv_fr"
+                      href="./pdf/OuahibSalma_CV_Version_Francais.pdf"
+                      >CV Version_Francaise</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-outline-light">
+                    <a
+                      id="cv_en"
+                      href="./pdf/OuahibSalma_CV_Version_Anglaise.pdf"
+                      >CV Version_Anglaise</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-outline-light">
+                    <a id="r_fr" href="./pdf/OuahibSalma_Resume_Francais.pdf"
+                      >Résumé Version_Francais</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-outline-light">
+                    <a id="r_en" href="./pdf/OuahibSalma_Resume_English.pdf"
+                      >Résumé Version_Anglais</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Details a propos de moi -->
+          <div class="more">
+            <section id="details_menu" class="details_moi">
+              <h1><span id="titre2"> Plus de détails : </span></h1>
+              <div class="first-container">
+                <div class="first-card">
+                  <div class="chart">
+                    <div class="date_naissance">
+                      <h4 id="titre_date">Date de naissance :</h4>
+                      <p id="info_date">22/02/2003</p>
+                    </div>
+                    <div class="lieu_O">
+                      <h4 id="titre_O">Ville d'origine :</h4>
+                      <p id="info_lieu_O">Marrakech</p>
+                    </div>
+                    <div class="lieu_H">
+                      <h4 id="titre_H">Ville actuelle :</h4>
+                      <p id="info_lieu_H">Rabat</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="first-card">
+                  <div class="chart">
+                    <canvas id="radar_F"></canvas>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="Parcours-academique">
+              <h1 style="margin-bottom: 1cm">
+                <span id="titre3"> Parcours académique : </span>
+              </h1>
+              <div class="first-container">
+                <div class="first-card">
+                  <div class="chart">
+                    <canvas id="parcours_F"> </canvas>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <section id="parcours_menu" class="progress-sec">
+            <div class="first-container">
+              <div class="first-card main-heading">
+                <h2 id="progression">Progression académique</h2>
+                <ul class="progress-list">
+                  <li
+                    id="ing"
+                    class="not-completed"
+                    data-content="2023-2026 ENSIAS-Rabat"
+                  >
+                    <span
+                      >Ingénieur d'état en Business Intelligence and Analytics
+                    </span>
+                  </li>
+                  <li
+                    id="licence"
+                    class="completed"
+                    data-content="2020-2023 FSSM-Marrakech"
+                  >
+                    <span>Licence en SMI </span>
+                  </li>
+                  <li
+                    id="technicien"
+                    class="completed"
+                    data-content="2020-2022 MEGA SCHOOL-Marrakech"
+                  >
+                    <span>Téchnicien Specialisée en Gestion d'entreprise </span>
+                  </li>
+                  <li
+                    id="bac"
+                    class="completed"
+                    data-content="2019-1020 Lycée Ibn Abbad-Marrakech"
+                  >
+                    <span>Baccaleuréat Science Math A </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="second-card main-heading">
+                <h2 id="title_exp_pa">Expérience</h2>
+                <div>
+                  <p id="paragraphe_pa">
+                    J'étais une étudiante passionnée par les mathématiques, ce
+                    qui m'a poussé à choisir la filière scientifique avec une
+                    spécialisation en mathématiques pour le baccalauréat. J'aime
+                    l'informatique, mais je n'étais pas encore complètement
+                    immergée dans ce domaine. C'est pourquoi j'ai décidé
+                    d'étudier la filière mathématiques et informatique à la
+                    faculté. J'étais major de ma promotion parce que nous
+                    étudions que des sujets mathématiques et informatique, et
+                    qui m'intéressaient. Par la suite, j'ai été admise à
+                    l'ENSIAS pour poursuivre ma carrière et m'épanouir dans les
+                    activités parascolaires.
+                  </p>
+                  <div class="skills-container">
+                    <div class="first-card">
+                      <div id="chart">
+                        <canvas id="bib_python_F"></canvas>
+                      </div>
+                    </div>
+                    <div class="first-card">
+                      <div id="chart">
+                        <canvas id="vs_F"></canvas>
+                      </div>
+                    </div>
+                    <div class="first-card">
+                      <div>
+                        <canvas id="langue_F"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- projets -->
+          <section id="projets_menu" class="projets main-heading">
+            <h2 style="margin-bottom: 1cm">
+              <span id="titre4"> Projets Académique : </span>
+            </h2>
+            <div class="projets-container">
+              <div class="projet-card">
+                <img src="./images/project1.jpg" alt="Projet 1" />
+                <div class="projet-info" onclick="showDetails('details1')">
+                  <h3 id="titre_projet1">
+                    Lisan : Une conversation vocale mieux qu'une lecture
+                  </h3>
+                  <div class="links">
+                    <a
+                      href="https://github.com/OuahibSalma/Lisan-tehniques-de-Deep-Learning"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="./pdf/Rapport_projet_1A.pdf"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></a>
+                  </div>
+                </div>
+                <div id="details1" class="details hidden">
+                  <span class="close-btn" onclick="closeDetails('details1')"
+                    >Fermer</span
+                  >
+                  <h2 id="titre_details1">Détails du projet</h2>
+                  <strong id="info11">But:</strong>
+                  <p id="data11">
+                    Exploration des modèles de deep Learning pour le traitement
+                    de la langue arabe
+                  </p>
+                  <strong id="info12">Durée:</strong>
+                  <p id="data12">Avril 2024 - Juin 2024</p>
+                  <strong id="info13">Compétences:</strong>
+                  <p id="data13">
+                    bibliothèque python Transformers, pydub, gtts...
+                  </p>
+                  <strong id="info14">Description:</strong>
+                  <p id="data14">
+                    C'est un projet de recherche dans lequel on a découvert des
+                    modèles pré-entraînés qui existent sur la plateforme Hugging
+                    Face. L'objectif est de faire une comparaison entre les
+                    différents modèles en se basant sur la durée pour obtenir
+                    une réponse, l'exactitude, etc.
+                  </p>
+                </div>
+                <div class="overlay hidden"></div>
+              </div>
+              <div class="projet-card">
+                <img src="./images/project2.jpeg" alt="Projet 2" />
+                <div class="projet-info" onclick="showDetails('details2')">
+                  <h3 id="titre_projet2">
+                    PharmaVision: Révolutionner la Gestion des Stocks
+                  </h3>
+                  <div class="links">
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href="./pdf/RapportProjetFinal_PowerBI.pdf"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></a>
+                  </div>
+                </div>
+                <div id="details2" class="details hidden">
+                  <span class="close-btn" onclick="closeDetails('details2')"
+                    >Fermer</span
+                  >
+                  <h2 id="titre_details2">Détails du projet</h2>
+                  <strong id="info21">But:</strong>
+                  <p id="data21">
+                    Visualiser les données et trouver des KPIs pertinents qui
+                    aident la pharmaceutique d'Oujda à trouver une solution au
+                    problème de la rupture de stock et de la surcharge de
+                    stocks.
+                  </p>
+                  <strong id="info22">Durée:</strong>
+                  <p id="data22">Décembre 2023 - Janvier 2024</p>
+                  <strong id="info23">Compétences:</strong>
+                  <p id="data23">Power BI, Analyse de données</p>
+                  <strong id="info24">Description:</strong>
+                  <p id="data24">
+                    C'est un projet challenge réalisé en utilisant Power BI pour
+                    analyser des données collectées par l'hopital d'Oujda. Le
+                    projet consiste à explorer ces données pour obtenir des
+                    informations clés sur l'activité hospitalière, et la
+                    consommation des médicaments, le stock, et tous ce que
+                    concerne la commande des fournisseurs.
+                  </p>
+                </div>
+                <div class="overlay hidden"></div>
+              </div>
+              <div class="projet-card">
+                <img
+                  src="https://editor.analyticsvidhya.com/uploads/18263full_dashboard.PNG"
+                  alt="Projet 3"
+                />
+                <div class="projet-info" onclick="showDetails('details3')">
+                  <h3 id="titre_projet3">Les tableaux de bord des habitats</h3>
+                  <div class="links">
+                    <a
+                      href="https://github.com/OuahibSalma/Dashboard_habitat-units"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div id="details3" class="details hidden">
+                  <span class="close-btn" onclick="closeDetails('details3')"
+                    >Fermer</span
+                  >
+                  <h2 id="titre_details3">Détails du projet</h2>
+                  <strong id="info31">But:</strong>
+                  <p id="data31">
+                    Utiliser Bokeh pour réaliser une application qui contient
+                    des interfaces interactives avec des visualisations des
+                    données.
+                  </p>
+                  <strong id="info32">Durée:</strong>
+                  <p id="data32">Mai 2024 - Juin 2024</p>
+                  <strong id="info33">Compétences:</strong>
+                  <p id="data33">
+                    Analyse de données , bibliothèque python : Pandas, et Bokeh.
+                  </p>
+                  <strong id="info34">Description:</strong>
+                  <p id="data34">
+                    C'est un projet réalisé en lieu et place d'un examen, et
+                    dans lequel on a cherché une base de données concernant les
+                    habitats. L'objectif est d'extraire les informations à
+                    partir des données qu'on a, tout en assurant l'interactivité
+                    avec les visualisations.
+                  </p>
+                </div>
+                <div class="overlay hidden"></div>
+              </div>
+              <div class="projet-card">
+                <img src="./images/project3.jpg" alt="Projet 3" />
+                <div class="projet-info" onclick="showDetails('details4')">
+                  <h3 id="titre_projet4">
+                    Jeu Mario : Conception et modélisation d’un jeu vidéo
+                  </h3>
+                  <div class="links">
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href="./pdf/Rapport_Jeu_Mario.pdf"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></a>
+                  </div>
+                </div>
+                <div id="details4" class="details hidden">
+                  <span class="close-btn" onclick="closeDetails('details4')"
+                    >Fermer</span
+                  >
+                  <h2 id="titre_details4">Détails du projet</h2>
+                  <strong id="info41">But:</strong>
+                  <p id="data41">
+                    Créer un jeu vidéo en utilisant la bibliothèque Pygame de
+                    Python.
+                  </p>
+                  <strong id="info42">Durée:</strong>
+                  <p id="data42">Mai 2023 - Juin 2023</p>
+                  <strong id="info43">Compétences:</strong>
+                  <p id="data43">
+                    Modélisation en utilisant UML, graphique avec l'outil Tiled,
+                    et la bibliothèque pygame de python.
+                  </p>
+                  <strong id="info44">Description:</strong>
+                  <p id="data44">
+                    C'est mon projet de fin d'études de licence dans lequel on a
+                    implémenté les différents diagrammes de l'UML pour réaliser
+                    l'étape de la conception, dessiner les différents niveaux de
+                    jeu en implémentant Tiled. Et finalement, coder en Python,
+                    en utilisant la bibliothèque Pygame.
+                  </p>
+                </div>
+                <div class="overlay hidden"></div>
+              </div>
+              <div class="projet-card">
+                <img src="./images/project5.jpg" alt="Projet 5" />
+                <div class="projet-info" onclick="showDetails('details5')">
+                  <h3 id="titre_projet5">
+                    LearnCode : Création d’un site web vitrine
+                  </h3>
+                  <div class="links">
+                    <a href="https://github.com/OuahibSalma/Site_Web_S3"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="./pdf/Projet 1.pdf"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></a>
+                  </div>
+                </div>
+                <div id="details5" class="details hidden">
+                  <span class="close-btn" onclick="closeDetails('details5')"
+                    >Fermer</span
+                  >
+                  <h2 id="titre_details5">Détails du projet</h2>
+                  <strong id="info51">But:</strong>
+                  <p id="data51">
+                    Utiliser juste HTML, CSS, JAVASCRIPT pour créer un site web
+                    vitrine.
+                  </p>
+                  <strong id="info52">Durée:</strong>
+                  <p id="data52">Décembre 2021 - Janvier 2022</p>
+                  <strong id="info53">Compétences:</strong>
+                  <p id="data53">HTML , CSS, JAVASCRIPT</p>
+                  <strong id="info54">Description:</strong>
+                  <p id="data54">
+                    C'est mon premier projet informatique dans lequel on a
+                    développé uniquement en utilisant HTML, CSS et JavaScript.
+                    C'est grâce à ce projet que j'ai maîtrisé le développement
+                    en JavaScript en apprenant via le site web Sololearn.
+                  </p>
+                </div>
+                <div class="overlay hidden"></div>
+              </div>
+              <div class="projet-card">
+                <img src="./images/project6.png" alt="Projet 6" />
+                <div class="projet-info" onclick="showDetails('details6')">
+                  <h3 id="titre_projet6">
+                    Application de gestion de banque en utilisant Java
+                  </h3>
+                  <div class="links">
+                    <a href="https://github.com/OuahibSalma/Projet_Java"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a href="./pdf/OuahibSalmaReport.pdf"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></a>
+                  </div>
+                </div>
+                <div id="details6" class="details hidden">
+                  <span class="close-btn" onclick="closeDetails('details6')"
+                    >Fermer</span
+                  >
+                  <h2 id="titre_details6">Détails du projet</h2>
+                  <strong id="info61">But:</strong>
+                  <p id="data61">
+                    Créer une application de gestion de banque en se basant sur
+                    un diagramme de classe, et le language Java
+                  </p>
+                  <strong id="info62">Durée:</strong>
+                  <p id="data62">Mars 2024 - Avril 2024</p>
+                  <strong id="info63">Compétences:</strong>
+                  <p id="data63">Java , UML</p>
+                  <strong id="info64">Description:</strong>
+                  <p id="data64">
+                    C'est un projet ou a fait une conception en utilisant le
+                    diagramme de classe de UML. et on a essayé de développer une
+                    application pour une gestion de banque avec des interface
+                    simple de swing, et tout en assurant le bon fonctionnement
+                    de l'application et les données de base de données.
+                  </p>
+                </div>
+                <div class="overlay hidden"></div>
+              </div>
+            </div>
+          </section>
+          <!-- Competences :  -->
+          <section class="tab main-heading" id="skills">
+            <h2 style="margin-bottom: 1cm">
+              <span id="titre5"> Compétences : </span>
+            </h2>
+            <div class="row">
+              <div class="competences-container">
+                <div class="competence-card">
+                  <h3 id="comp1">Bases des Données</h3>
+                  <div class="competence-icons">
+                    <img src="./images/mysql.png" alt="MySQL" />
+                    <img src="./images/sqlserver.png" alt="SQL Server" />
+                    <img
+                      src="https://naseba.com/wp-content/uploads/2018/08/Oracle-Logo.png"
+                      alt="Oracle"
+                    />
+                  </div>
+                </div>
+                <div class="competence-card">
+                  <h3 id="comp2">Science des données</h3>
+                  <div class="competence-icons">
+                    <img src="./images/numpy.png" alt="NumPy" />
+                    <img src="./images/pandas.png" alt="Pandas" />
+                    <img src="./images/pdfkit.png" alt="Scikit-learn" />
+                    <img src="./images/time.png" alt="Matplotlib" />
+                    <img src="./images/Jinja.png" alt="Seaborn" />
+                    <img src="path/to/tensorflow-logo.png" alt="TensorFlow" />
+                    <img src="path/to/pytorch-logo.png" alt="PyTorch" />
+                    <img src="path/to/pyg-logo.png" alt="PyG" />
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-3jZQK8jbM-apLRQBKdRIYeFfhVfFwKDVjg&s"
+                      alt="bokeh"
+                    />
+                  </div>
+                </div>
+                <div class="competence-card">
+                  <h3 id="comp3">Extraction de données web</h3>
+                  <div class="competence-icons">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyEait6G415tXDWBqUKEpyLYGmrDUBQQN_zA&s"
+                      alt="Selenium"
+                    />
+                    <img src="./images/beautifulSoup.png" alt="BeautifulSoup" />
+                  </div>
+                </div>
+                <div class="competence-card">
+                  <h3 id="comp4">ETL et BI</h3>
+                  <div class="competence-icons">
+                    <img
+                      src="https://logosmarcas.net/wp-content/uploads/2022/02/Power-BI-Emblema.png"
+                      alt="Power BI"
+                    />
+                  </div>
+                </div>
+                <div class="competence-card">
+                  <h3 id="comp5">Langage de programmation</h3>
+                  <div class="competence-icons">
+                    <img src="./images/c.png" alt="c" />
+                    <img src="./images/c++.png" alt="c++" />
+                    <img
+                      src="https://th.bing.com/th/id/OIP.8uELVzzPXUxjgS45pYXBSAHaEh?w=820&h=500&rs=1&pid=ImgDetMain"
+                      alt="python"
+                    />
+                    <img
+                      src="https://th.bing.com/th/id/R.3d2843de9a57d57bba1f15e2a40a6752?rik=iIURh%2fBpmIyKvg&pid=ImgRaw&r=0"
+                      alt="java"
+                    />
+                    <img src="./images/html.png" alt="html" />
+                    <img src="./images/js.png" alt="js" />
+                    <img src="./images/css.png" alt="css" />
+                  </div>
+                </div>
+                <div class="competence-card">
+                  <h3 id="comp6">Autre compétences</h3>
+                  <div class="competence-icons">
+                    <img
+                      src="https://th.bing.com/th/id/R.e8efed12d06bc4388d9a9195bc6901a6?rik=v2kavDMCQctoGw&pid=ImgRaw&r=0"
+                      alt="linux"
+                    />
+                    <img
+                      src="https://astah.change-vision.com/ja/Resources/Images/logos/edition/uml_astah.png"
+                      alt="Astah_UML"
+                    />
+                    <img src="./images/cisco.png" alt="Cisco_Packet_Tracer" />
+                    <img
+                      src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/23_Photoshop_Adobe_logo_logos-1024.png"
+                      alt="Photoshop"
+                    />
+                    <img src="./images/adobe.png" alt="AdobeIllustrator" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Experience professionnelle -->
+          <section id="experience_menu" class="experience1 main-heading">
+            <h2 style="margin-bottom: 1cm">
+              <span id="titre6"> Expérience professionnelle : </span>
+            </h2>
+            <div class="first-container">
+              <div class="first-card">
+                <div id="chart">
+                  <canvas id="experience_F"></canvas>
+                </div>
+              </div>
+              <div class="text">
+                <div class="second-card">
+                  <strong id="conseil_t">Conseil : </strong>
+                  <p id="conseil">
+                    LinkedIn s'avère être un outil incontournable pour les
+                    étudiants en quête de stages, offrant une plateforme idéale
+                    pour établir un réseau professionnel solide. En parallèle,
+                    cultiver des relations positives avec vos professeurs peut
+                    ouvrir de nombreuses portes.
+                  </p>
+                </div>
+                <div class="third-card">
+                  <strong id="compvsex_t">
+                    L'expérience professionnelle est important que les
+                    compétences
+                  </strong>
+                  <p id="compvsex">
+                    L'expérience professionnelle forge des compétences pratiques
+                    essentielles : résolution de problèmes réels, travail
+                    d'équipe et adaptabilité. Contrairement aux compétences
+                    théoriques, elle démontre la capacité à appliquer ses
+                    connaissances et à apprendre de nouvelles technologies pour
+                    résoudre des problèmes concrets, ce qui est très valorisé
+                    par les employeurs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Experience Extra scolaire -->
+          <section id="activite_menu" class="experience main-heading">
+            <h2 style="margin-bottom: 1cm">
+              <span id="titre7"> Expérience Extra scolaire : </span>
+            </h2>
+            <div class="first-container">
+              <div class="more-about">
+                <div class="first-card">
+                  <strong id="mini_titre1">Club CINDH </strong>
+                  <h3 id="mini_detail1">
+                    Responsable Spam, membre cellule dons et sponsoring
+                  </h3>
+                  <p id="mini_text1">
+                    Le Club d'Initiation Nationale au Développement Humain offre
+                    une opportunité enrichissante de s'engager dans des actions
+                    solidaires. En tant que membre, j'ai le privilège de
+                    participer à des activités bénéfiques pour la communauté,
+                    notamment auprès des enfants, ce qui est source de grande
+                    satisfaction personnelle. Au sein de la cellule sponsoring,
+                    nous développons des compétences précieuses en communication
+                    et négociation. Cette expérience m'a profondément marqué,
+                    renforçant ma conviction qu'il est essentiel de tendre la
+                    main à ceux dans le besoin, contribuant ainsi à créer une
+                    société plus solidaire et empathique.
+                  </p>
+                </div>
+                <div class="first-card">
+                  <strong id="mini_titre2">Pourqoui l'Extra scolaire :</strong>
+                  <p id="mini_text2">
+                    L'engagement dans des activités extrascolaires enrichit
+                    considérablement le profil d'un étudiant, démontrant
+                    polyvalence, initiative et compétences pratiques. Ces
+                    expériences, qu'elles soient bénévoles, associatives ou
+                    créatives, témoignent d'une personnalité équilibrée et
+                    proactive, atouts majeurs aux yeux des recruteurs et dans le
+                    développement personnel.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Me contacter -->
+          <section class="contact">
+            <div class="first-container">
+              <div class="first-card">
+                <div class="testimonials main-heading">
+                  <h2 id="citation">Citation :</h2>
+                  <div class="content">
+                    <img
+                      src="https://th.bing.com/th/id/OIP.-W_k352UYZlS94YV6MthTwHaF6?rs=1&pid=ImgDetMain"
+                      alt="img1"
+                    />
+                    <div class="quotes">
+                      <div class="text" id="citation1">
+                        Le succès n'est pas final, l'échec n'est pas fatal.
+                        C'est le courage de continuer qui compte.
+                      </div>
+                      <p>Winston Churchill.</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <img
+                      src="https://api.ndla.no/image-api/raw/vFu07XH2.jpg?width=1024"
+                      alt="img2"
+                    />
+                    <div class="quotes">
+                      <div class="text" id="citation2">
+                        Je ne perds jamais. Soit je gagne, soit j'apprends.
+                      </div>
+                      <p>Nelson Mandela.</p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <img
+                      src="https://www.tracesofwar.com/upload/articles/9844160806144010g.jpg"
+                      alt="img3"
+                    />
+                    <div class="quotes">
+                      <div class="text" id="citation3">
+                        La seule limite à notre épanouissement de demain sera
+                        nos doutes d'aujourd'hui.
+                      </div>
+                      <p>Franklin Delano Roosevelt.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="contact_menu" class="contact">
+              <div class="container">
+                <div class="main-heading">
+                  <h2 id="discussion">Parlons de tout!</h2>
+                  <div class="text-contact">
+                    <p id="quote1">
+                      Le dialogue est le chemin le plus court entre deux
+                      personnes.
+                    </p>
+                    <p id="quote2">
+                      Les meilleures idées naissent souvent d'une simple
+                      conversation.
+                    </p>
+                    <p id="pa">
+                      Vous n'aimez pas les formulaires? Utilisez la méthode que
+                      vous convient.
+                    </p>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="mailto:salmaouahib02@gmail.com"
+                          ><i class="fa-solid fa-envelope"></i> Email
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/salma-ouahib-140b13242/"
+                          ><i class="fa-brands fa-linkedin"></i> Linkedin</a
+                        >
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-phone-volume"></i>+212 6 59 29 39
+                        06
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="content">
+                  <form action="">
+                    <input
+                      class="main-input"
+                      id="nom"
+                      type="text"
+                      name="name"
+                      placeholder="Insérez votre nom"
+                    />
+                    <input
+                      class="main-input"
+                      id="mail"
+                      type="email"
+                      name="mail"
+                      placeholder="Insérez votre email"
+                    />
+                    <input
+                      name="sujet"
+                      id="sujet"
+                      type="text"
+                      class="main-input"
+                      placeholder="Insérez votre sujet"
+                    />
+                    <textarea
+                      class="main-input"
+                      id="message"
+                      name="message"
+                      placeholder="Écrivez votre message"
+                    ></textarea>
+                    <div class="envoyer">
+                      <input
+                        id="envoyer"
+                        type="submit"
+                        value="Envoyer le message"
+                        class=""
+                      />
+                      <div class="alert alert-hidden">
+                        <p>
+                          <i class="fas fa-check-circle"></i> Merci de nous
+                          contacter
+                        </p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <!-- Classes for CSS, and id for JS, for translation -->
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- scripts -->
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+    <script src="./script_vis_up.js"></script>
+    <script src="./script_translation.js"></script>
+    <script src="./script_chatbot.js"></script>
+  </body>
+</html>
